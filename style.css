@@ -1,0 +1,96 @@
+#canvas,
+#canvas_helper {
+  width: 1000px;
+  height: 600px;
+  border: 3px solid #BDBDBD;
+  position: absolute;
+}
+
+body,
+#clear {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+.main {
+  width: 1000px;
+  margin: 50px auto;
+}
+
+img {
+  width: 15px;
+  vertical-align: middle
+}
+
+#value_size {
+  width: 150px
+}
+
+#value_color {
+  width: 75px;
+  height: 25px;
+}
+
+.toolbar_1,
+.toolbar_2 {
+  margin: 20px 0;
+}
+
+button#clear {
+  width: 75px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0;
+}
+
+button#clear:active,
+button#clear:focus {
+  outline: none;
+}
+
+.activeButton {
+  background-color: #fff;
+  box-shadow: 0px 0px 7px 1px rgba(245,123,0,0.52);
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom
+}
+
+.type button,
+.toolbar_1>div,
+.toolbar_2>div,
+.color,
+.clear_button {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+.size {
+  width: 240px;
+}
+
+.showBlock {
+  display: inline;
+  margin: 0 15px;
+}
+
+.hideBlock {
+  display: none;
+}
+
+header {
+  padding-top: 10px;
+  width: 500px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(244, 122, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #F57C00;
+}

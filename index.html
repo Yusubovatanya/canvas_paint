@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Canvas</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Canvas Paint</h1>
+  </header>
+  <div class="main">
+    <div class="toolbar_1">
+      <div class="clear_button">
+        <button type="button" id="clear">Clear</button>
+      </div>
+      <div class="color">
+        <label>Color: <input type="color" id="value_color" value="#F57C00"></label>
+      </div>
+      <div class="size">
+        <label>Size: <input type="range" id="value_size" min="0.5" max="50" step="0.5" value="25"></label>
+        <span id="change_size"></span>
+      </div>
+      <div class="type">Options:
+        <div class="pencil_tools showBlock">
+          <button id="pencil_square" class="activeButton"><img src="img/square.png" alt=""></button>
+          <button id="pencil_circle"><img src="img/circle.png" alt=""></button>
+        </div>
+        <div class="arc_tools hideBlock">
+          <button id="arcFill" class="activeButton"><img src="img/circle.png" alt=""></button>
+          <button id="arcStroke"><img src="img/arc.png" alt=""></button>
+        </div>
+        <div class="rect_tools hideBlock">
+          <button id="rectFill" class="activeButton"><img src="img/square.png" alt=""></button>
+          <button id="rectStroke"><img src="img/rect.jpg" alt=""></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="toolbar_2">
+      <button id="pencil" class="activeButton"><img src="img/pencil.jpg" alt=""></button>
+      <button id="arc"><img src="img/arc.png" alt=""></button>
+      <button id="rect"><img src="img/rect.jpg" alt=""></button>
+      <button id="line"><img src="img/line.png" alt=""></button>
+    </div>
+    <div class="paint">
+      <canvas id="canvas_helper" width="1000" height="600"></canvas>
+      <canvas id="canvas" width="1000" height="600"></canvas>
+
+    </div>
+
+  </div>
+
+
+  <script src="main.js" async></script>
+</body>
+
+</html>
